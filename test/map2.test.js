@@ -1,3 +1,4 @@
+const { expect } = require('chai');
 const getFoodCategories = require('../map/ex2.js');
 
 xdescribe('map - exercice 2', () => {
@@ -20,7 +21,7 @@ xdescribe('map - exercice 2', () => {
       food: 'Chick Pea',
       isVegetarian: true
     }
-  ])).to.equal([
+  ])).to.deep.equal([
       'Bacon is not suitable for vegetarians',
       'Sausage is not suitable for vegetarians',
       'Tofu is suitable for vegetarians',

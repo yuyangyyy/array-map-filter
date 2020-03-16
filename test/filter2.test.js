@@ -1,3 +1,4 @@
+const { expect } = require('chai');
 const keepStarks = require('../filter/ex2.js');
 
 xdescribe('filter - exercice 2', () => {
@@ -11,7 +12,7 @@ xdescribe('filter - exercice 2', () => {
       'Yara Greyjoy',
       'Sansa Stark'
     ]))
-    .to.equal(['Bran Stark', 'Arya Stark', 'Sansa Stark']);
+    .to.deep.equal(['Bran Stark', 'Arya Stark', 'Sansa Stark']);
   });
 
 });

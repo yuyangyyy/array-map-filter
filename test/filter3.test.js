@@ -1,3 +1,4 @@
+const { expect } = require('chai');
 const filterOnPrice = require('../filter/ex3.js');
 
 const products = [
@@ -27,7 +28,7 @@ xdescribe('filter - exercice 3', () => {
 
   it('filterOnPrice (price <= 500)', () => {
     expect(filterOnPrice(products, 500))
-    .to.equal([
+    .to.deep.equal([
       {
         name: 'Xiaomi Mi A2',
         price: 209
@@ -40,7 +41,7 @@ xdescribe('filter - exercice 3', () => {
   });
   it('filterOnPrice (price <= 649)', () => {
     expect(filterOnPrice(products, 649))
-    .to.equal([
+    .to.deep.equal([
       {
         name: 'Xiaomi Mi A2',
         price: 209

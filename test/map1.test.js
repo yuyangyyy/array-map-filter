@@ -9,7 +9,7 @@ xdescribe('map - exercice 1', () => {
       'Bacon',
       'Tofu',
       'Mayonnaise'
-    ])).to.equal([
+    ])).to.deep.equal([
       'Chicken contains 7 characters',
       'Bacon contains 5 characters',
       'Tofu contains 4 characters',
