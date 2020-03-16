@@ -7,17 +7,12 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "./node_modules/jest/bin/jest.js"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^25.0.0",
-    "jest-check-cross-reporter": "^0.1.0"
-  },
-  "jest": {
-    "reporters": [
-      "jest-check-cross-reporter"
-    ]
+    "chai": "^4.2.0",
+    "mocha": "^7.1.0"
   }
 }

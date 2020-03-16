@@ -1,2 +1,2 @@
 #!/bin/bash
-perl -pi -e 's/describe\(/xdescribe(/g' tests/*.test.js
+perl -pi -e 's/describe\(/xdescribe(/g' test/*.test.js

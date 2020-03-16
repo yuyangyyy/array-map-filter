@@ -2,7 +2,7 @@ const keepStarks = require('../filter/ex2.js');
 
 xdescribe('filter - exercice 2', () => {
 
-  test('keepStarks', () => {
+  it('keepStarks', () => {
     expect(keepStarks([
       'Bran Stark',
       'Cersei Lannister',
@@ -11,7 +11,7 @@ xdescribe('filter - exercice 2', () => {
       'Yara Greyjoy',
       'Sansa Stark'
     ]))
-    .toEqual(['Bran Stark', 'Arya Stark', 'Sansa Stark']);
+    .to.equal(['Bran Stark', 'Arya Stark', 'Sansa Stark']);
   });
 
 });
