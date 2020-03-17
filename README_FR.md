@@ -19,7 +19,7 @@
 
 ### Réactiver les tests
 
-Tous les tests sont désactivés au début (`SKIP` en bleu clair si vous faites `npm test`), pour ne pas "polluer" le terminal avec les messages d'erreurs dûs au fait que les exercices sont non-résolus.
+Tous les tests sont désactivés au début (nom du test en bleu clair si tu fais `npm test`), pour ne pas "polluer" le terminal avec les messages d'erreurs dûs au fait que les exercices sont non-résolus.
 
 **Les tests se réactivent 1 par 1**:
 
