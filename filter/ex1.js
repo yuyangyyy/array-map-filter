@@ -1,22 +1,27 @@
-/* Array.prototype.filter - Exercice 1
+/* Array.prototype.filter - Exercise 1
 
-Ecrire une fonction getPositiveNumbers qui reçoit comme un argument un tableau de nombres.
-En utilisant filter, cette fonction doit renvoyer un tableau ne contenant que des nombres
-positifs ou nuls.
+* Write the CONTENTS of the `getPositiveNumbers` function (don't rename it!)
+* It receives an array of numbers as an argument
+* Inside this function, use filter on the array of numbers to keep ONLY positive numbers (incl. zero)
+* Return the result of filter
 
-Exemple de tableau d'entrée:
+Sample numbers array, i.e. INPUT:
   [7, -4, 2, 0, -10, 3, 11]
-Sortie attendue:
+
+Expected OUTPUT for this sample:
   [7, 2, 0, 3, 11]
 
- */
+*/
 
 function getPositiveNumbers(numbers) {
 }
 
-// Si besoin, tu peux toujours visualiser le résultat avec console.log,
-// mais alors, il faut alors lancer l'exercice avec node filter/ex1
+// If you need, you can always visualize the result with a console.log.
+// In that case, uncomment the line below (you can also add your own
+// console.log INSIDE the function).
+// Instead of running `npm test`, you can then use `node filter/ex1`.
+
 // console.log(getPositiveNumbers([-2, -1, 0, 1, 2]));
 
-// Ne pas modifier l'export
+// DON'T TOUCH THIS!
 module.exports = getPositiveNumbers;
