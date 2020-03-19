@@ -1,20 +1,21 @@
-/* Array.prototype.map - Exercice 3
+/* Array.prototype.map - Exercise 3
 
-Ecrire une fonction getMoviesFreshness qui reçoit comme un argument un tableau
-d'objets représentant des films.
-Chaque film a deux propriétés:
-  - `name` le nom du film
-  - `rating` la note qui lui attribuée sur le site rottentomatoes.com
+* FAIR WARNING: this one is harder than the two others!
+* Write the CONTENTS of the `getMoviesFreshness` function
+* It receives an array of OBJECTS representing movies
+* Each "movie" object has two properties:
+   * `name` name of the movie
+   * `rating` the average rating it's been given on rottentomatoes.com
+* `getMoviesFreshness` must return an array containing the objects of the input array, EACH
+  having a new property. The KEY of this new property should be `label`, and the associated VALUE
+  should be a string, which depends on the `rating` property:
+  * If `rating` is STRICTLY below 60, the value to assign to `label` is "rotten".
+  * If `rating` is between 60 and 75 (included), the value to assign to `label` is "fresh".
+  * If `rating` STRICTLY above 75, the value to assign to `label` is "certified fresh".
+* You might need a refresher on how to manipulate object literals:
+  https://www.dyn-web.com/tutorials/object-literal/properties.php
 
-La fonction getMoviesWithFreshness doit renvoyer un tableau contenant les objets du tableau
-d'entrée, auxquels on aura ajouté une propriété, dont la clé sera label, et la valeur,
-une chaîne, dépendante de la valeur de rating :
-
-* Si `rating` est infériéur à 60, la valeur à attribuer à label sera "rotten".
-* Si `rating` est compris entre 60 et 75 (inclus), la valeur à attribuer à label sera "fresh".
-* Si `rating` est supérieur à 75, la valeur à attribuer à label sera "certified fresh".
-
-Exemple d'entrée:
+Sample movies array, i.e. INPUT:
   [
     {
       name: 'Crazy Rich Asians',
@@ -33,7 +34,8 @@ Exemple d'entrée:
       rating: 60
     }
   ]
-En sortie:
+
+Expected OUTPUT for this sample:
   [
     {
       name: 'Crazy Rich Asians',
@@ -64,5 +66,5 @@ function getMoviesFreshness(movies) {
 
 
 
-// Ne pas modifier l'export
+// DON'T TOUCH THIS!
 module.exports = getMoviesFreshness;

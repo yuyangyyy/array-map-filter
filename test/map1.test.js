@@ -1,14 +1,15 @@
+const { expect } = require('chai');
 const getStringsLength = require('../map/ex1.js');
 
 xdescribe('map - exercice 1', () => {
 
-  test('getStringsLength', () => {
+  it('getStringsLength', () => {
     expect(getStringsLength([
       'Chicken',
       'Bacon',
       'Tofu',
       'Mayonnaise'
-    ])).toEqual([
+    ])).to.deep.equal([
       'Chicken contains 7 characters',
       'Bacon contains 5 characters',
       'Tofu contains 4 characters',

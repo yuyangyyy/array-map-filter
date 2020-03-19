@@ -1,20 +1,18 @@
-/* Array.prototype.map - Exercice 2
+/* Array.prototype.map - Exercise 2
 
-Ecrire une fonction getFoodCategories qui reçoit comme un argument un tableau
-d'objets.
-Chaque objet a deux propriétés:
-  - `food` le nom d'un produit alimentaire
-  - `isVegetarian` un booléen indiquant si le produit convient aux végétariens
+* Write the CONTENTS of the `getFoodCategories` function
+* It receives an array of OBJECTS as an argument
+* Each object in this array has two attributes:
+    `food` is the name of a food product
+    `isVegetarian` is a boolean, indicating if this product is suitable for vegetarians
+* Using map, `getFoodCategories` must return an array of STRINGS.
+* For each element (object) of the input `foods` array, the corresponding element in the
+  output array can be computed this way:
+    * "FOOD is suitable for vegetarians" if the `isVegetarian` attribute is true
+    * "FOOD is not suitable for vegetarians" if the `isVegetarian` attribute is false
+    (replace FOOD with the `food` attribute)
 
-La fonction getFoodCategories doit renvoyer un tableau contenant,
-pour chaque objet d'entrée:
-- la chaîne "FOOD is suitable for vegetarians"
-OU
-- la chaîne "FOOD is not suitable for vegetarians"
-en fonction de la valeur de la propriété `isVegetarian`, en remplaçant FOOD
-par le nom du produit
-
-Exemple d'entrée:
+Sample foods array, i.e. INPUT:
   [
     {
       food: 'Bacon',
@@ -33,19 +31,21 @@ Exemple d'entrée:
       isVegetarian: true
     }
   ]
-En sortie: [
-  'Bacon is not suitable for vegetarians',
-  'Sausage is not suitable for vegetarians',
-  'Tofu is suitable for vegetarians',
-  'Chick Pea is suitable for vegetarians'
-]
 
- */
+Expected OUTPUT for this sample
+  [
+    'Bacon is not suitable for vegetarians',
+    'Sausage is not suitable for vegetarians',
+    'Tofu is suitable for vegetarians',
+    'Chick Pea is suitable for vegetarians'
+  ]
+
+*/
 
 function getFoodCategories(foods) {
 }
 
 
 
-// Ne pas modifier l'export
+// DON'T TOUCH THIS!
 module.exports = getFoodCategories;

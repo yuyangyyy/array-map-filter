@@ -1,8 +1,9 @@
+const { expect } = require('chai');
 const getMoviesFreshness = require('../map/ex3.js');
 
 xdescribe('map - exercice 3', () => {
 
-  test('getMoviesFreshness', () => {
+  it('getMoviesFreshness', () => {
     expect(getMoviesFreshness(
       [
         {
@@ -22,7 +23,7 @@ xdescribe('map - exercice 3', () => {
           rating: 60
         }
       ]
-    )).toEqual(
+    )).to.deep.equal(
       [
         {
           name: 'Crazy Rich Asians',

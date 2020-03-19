@@ -1,34 +1,53 @@
-# Exercices sur map et filter
+# `map` and `filter` exercises
+
+[FRENCH VERSION (a bit less detailed)](README_FR.md)
 
 ## Installation
 
-* **D'abord** forker ce repo (bouton ci-dessus à droite)
-* Tu seras alors redirigé vers la copie créée sur ton compte, dont tu devras récupérer l'URL pour la **cloner** sur ton ordinateur.
-* **Si** tu as cloné d'abord sans forker, pas de panique, voir à la fin (mais lis d'abord les instructions la prochaine fois :wink:)
-* Une fois le repo cloné, se placer dans le répertoire `array-map-filter`, puis lancer `npm install`
+* **First of all**, fork this repo (button in the upper-right corner)
+* You'll then be redirected to the copy created on your account, of which you must get the URL, in order to **clone** it on your computer.
+* **If** you cloned the repo instead of forking, don't panic, instructions are given at the end to get you back on your feet (but next time... read the instructions first :wink:)
+* Once you've cloned the repo locally, navigate to its folder (`cd array-map-filter`),
+* **Run `npm install`** (this will install the automatic testing tools)
 
-## Utilisation
+## Usage
 
-**Absolument lire** la partie sur "réactiver les tests" dans cette section !
+This repo uses an automatic testing tool. Once you've performed all the installation steps, run `npm test` (after ); your screen should look like this:
 
-### Lancer les tests
+![No tests enabled](https://raw.github.com/WildCodeSchool/array-map-filter/jest-to-mocha/screenshot-all-tests-disabled.png)
 
-* Il y a deux séries d'exercices, situées dans `map` et `filter`.
-* L'ordre importe peu entre `map` et `filter`.
-* Pour lancer les tests: `npm test`
+At the bottom of the screen, you can see "0 passing", and on the next line "7 pending". This means the 7 tests are **deactivated**, which is **intended**: otherwise your screen would be filled with unfriendly error messages in red.
 
-### Réactiver les tests
+### Activating a test
 
-Tous les tests sont désactivés au début (`SKIP` en bleu clair si vous faites `npm test`), pour ne pas "polluer" le terminal avec les messages d'erreurs dûs au fait que les exercices sont non-résolus.
+When you start working on an exercise, you have to **enable** the test for **that** exercise. For example if you start working on `filter/ex1.js`, you have to run:
 
-**Les tests se réactivent 1 par 1**:
+```sh
+./enable filter 1
+```
 
-* soit en remplaçant `xdescribe` par `describe`, dans le fichier de test correspondant à l'exercice sur lequel on travaille (par exemple, `tests/filter1.test.js` si on travaille sur `filter/ex1.js`).
-* soit plus simplement en lançant, depuis la racine du repo `array-map-filter`, `./enable SERIE NUMERO`, en remplaçant `SERIE` par `map` ou `filter` et `NUMERO` par le n° de l'exercice. Par exemple, `./enable map 2` pour activer les tests du 2ème exercice de la série `map`.
-* On peut également les activer / désactiver tous d'un coup, via `./enableAll` et `./disableAll`
+Now if you run `npm test` again, you should see something like this:
 
-## HELP! J'ai cloné sans forker !
+![One test enabled](https://raw.github.com/WildCodeSchool/array-map-filter/jest-to-mocha/screenshot-one-test-enabled.png)
 
-* Pas de panique: tu peux maintenant forker le dépôt
-* Pour lier ton dépôt à ton fork, au lieu du dépôt initial, il faut éditer le fichier `.git/config`.
-* Dans ce fichier, sous la ligne `[remote "origin"]`, remplacer `WildCodeSchool` par ton pseudo GitHub dans l'URL `https://github.com/WildCodeSchool/array-map-filter`.
+The "statistics" at the bottom have just changed: the test for `filter/ex1.js` is now running, but it's failing with this message:
+
+    AssertionError: expected undefined to deeply equal [ 7, 2, 0, 3, 11 ]
+
+Now, what does that mean? It means that the test called the function defined in `filter/ex1.js`, and **expected a result** (the array on the right). Since the function is empty, it received a different result (`undefined`).
+
+> When you solve the exercise, the "failing" test should be replaced with a "passing" test when you run `npm test`.
+
+### Now, solve them all!
+
+There are two series of three exercises each: one inside `map`, one inside `filter`. You can do them in any order.
+
+Run `npm test` each time you think you made a step forward in solving an exercise (making sure you did **save** your `.js` file).
+
+Don't hesitate to use `console.log` along the way, to print the values of variables as you're attempting to solve the exercises.
+
+## HELP! I cloned before forking!
+
+* Don't panic: you **still** can fork the repo
+* To link your **local** repo to the **remote** repo (your fork), you have to edit `.git/config` (which you may do with `nano` under Linux, MacOS, or Windows with Git Bash).
+* In this file, under the line `[remote "origin"]`, replace `WildCodeSchool` with your own GitHub username in the URL: `https://github.com/WildCodeSchool/array-map-filter`.

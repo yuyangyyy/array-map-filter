@@ -1,14 +1,16 @@
-/* Array.prototype.filter - Exercice 3
+/* Array.prototype.filter - Exercise 2
 
-Ecrire une fonction keepStarks, qui prend en arguments un tableau de chaînes
-(plus spécifiquement, des noms de personnages de Game of Thrones).
+* Write the CONTENTS of the `keepStarks` function
+* It receives an array of strings as an argument (more specifically, names of
+  characters from Game of Thrones)
+* The function must return an array, containing ONLY members of the Stark family
 
-La fonction doit renvoyer un tableau ne contenant que les membres de la famille Stark.
+WAIT, WAIT, there's a little more you need to know! There are different ways to write the
+function you'll give as a parameter to filter. You will probably need ONE of these:
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 
-Il y a plusieurs façons d'écrire cette fonction, et outre filter, tu auras probablement
-besoin d'une de ces méthodes de String: endsWith ou split.
-
-Exemple d'entrée:
+Sample names array, i.e. INPUT:
   [
     'Bran Stark',
     'Cersei Lannister',
@@ -18,13 +20,13 @@ Exemple d'entrée:
     'Sansa Stark'
   ]
 
-Sortie attendue:
+Expected OUTPUT for this sample:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
- */
+*/
 
 function keepStarks(names) {
 }
 
-// Ne pas modifier l'export
+// DON'T TOUCH THIS!
 module.exports = keepStarks;
