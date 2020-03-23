@@ -20,7 +20,7 @@ At the bottom of the screen, you can see "0 passing", and on the next line "7 pe
 
 ### Activating a test
 
-When you start working on an exercise, you have to **enable** the test for **that** exercise. For example if you start working on `filter/ex1.js`, you have to run:
+When you start working on an exercise, you have to **enable** the test for **that** exercise. For example if you start working on `filter/ex1.js`, run this (Windows users, please use **Git Bash** and not the regular Windows terminal):
 
 ```sh
 ./enable filter 1
