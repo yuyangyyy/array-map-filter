@@ -33,6 +33,9 @@ Expected OUTPUT for these sample arguments:
 */
 
 function filterOnPrice(products, maxPrice) {
+  return products.filter(function(product){
+    return product.price <= maxPrice
+  })
 }
 
 // DON'T TOUCH THIS!
