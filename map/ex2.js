@@ -43,8 +43,16 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
-}
-
+  return foods.map(function(objFood){
+    let message = ''
+    if (objFood.isVegetarian === true){ 
+      message = `${objFood.food} is suitable for vegetarians`
+    } else {
+      message = `${objFood.food} is not suitable for vegetarians`
+    }
+    return message
+  })
+} 
 
 
 // DON'T TOUCH THIS!
